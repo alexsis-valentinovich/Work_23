@@ -11,7 +11,7 @@ namespace Part_1
         static void Main(string[] args)
         {
             Console.WriteLine("Введите число");
-            int n=Convert.ToInt32(Console.ReadLine());
+            int n = Convert.ToInt32(Console.ReadLine());
             FactorilAsync(n);
             int f1 = 1;
             for (int i = 1; i <= n; i++)
@@ -31,9 +31,9 @@ namespace Part_1
             }
             Console.WriteLine("Факториал числа = {0}", f);
         }
-        static async void FactorilAsync (int n)
+        static async void FactorilAsync(int n)
         {
-            await Task.Run(()=> Factorial (n));
+            await Task.Run(() => Factorial(n));
         }
     }
 }
